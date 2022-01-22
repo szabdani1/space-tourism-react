@@ -13,5 +13,5 @@ Your challenge is to build out this multi-page space tourism website and get it 
 **Have fun building!** 🚀
 ## To Run use 
 **npm start**
-To Install dependencys \n
+To Install dependencys
 **npm i**
