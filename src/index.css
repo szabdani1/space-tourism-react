@@ -1,13 +1,62 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  font-size: 62.5%;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-image: url("../src/assets/home/background-home-mobile.jpg");
+  background-size: cover;
+  margin: 2.4rem;
+}
+body.bg-destination {
+  background-image: url("../src/assets/destination/background-destination-mobile.jpg");
+}
+body.bg-crew {
+  background-image: url("../src/assets/crew/background-crew-mobile.jpg");
+}
+body.bg-technology {
+  background-image: url("../src/assets/technology/background-technology-mobile.jpg");
+}
+@media (min-width: 768px) {
+  :root {
+    font-size: 100.5%;
+ }
+  body {
+    background-image: url("../src/assets/home/background-home-tablet.jpg");
+    margin: 0;
+ }
+  body.bg-destination {
+    background-image: url("../src/assets/destination/background-destination-tablet.jpg");
+ }
+  body.bg-crew {
+    background-image: url("../src/assets/crew/background-crew-tablet.jpg");
+ }
+  body.bg-technology {
+    background-image: url("../src/assets/technology/background-technology-tablet.jpg");
+ }
+}
+@media (min-width: 1024px) {
+  :root {
+    font-size: 82.5%;
+ }
+  body {
+    background-image: url("../src/assets/home/background-home-desktop.jpg");
+    margin: 0;
+ }
+  body.bg-destination {
+    background-image: url("../src/assets/destination/background-destination-desktop.jpg");
+ }
+  body.bg-crew {
+    background-image: url("../src/assets/crew/background-crew-desktop.jpg");
+ }
+  body.bg-technology {
+    background-image: url("../src/assets/technology/background-technology-desktop.jpg");
+ }
+}
+@media (min-width: 1440px) {
+  :root {
+    font-size: 109.5%;
+ }
 }

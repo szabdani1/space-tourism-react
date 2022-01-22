@@ -1,0 +1,136 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header .homeLogo:hover {
+    opacity: 0.8;
+}
+header .homeLogo:active {
+    opacity: 0.4;
+}
+header .hamburguerMenu .icon {
+    cursor: pointer;
+}
+header .hamburguerMenu .icon.inactive {
+    display: none;
+}
+header .hamburguerMenu .icon:hover {
+    opacity: 0.8;
+}
+header .hamburguerMenu .icon:active {
+    opacity: 0.4;
+}
+header .hamburguerMenu .links {
+    display: none;
+}
+header .hamburguerMenu .links.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.04);
+    -webkit-backdrop-filter: blur(3rem);
+    backdrop-filter: blur(3rem);
+    width: 70vw;
+    height: 100vh;
+    z-index: 1;
+}
+header .hamburguerMenu .links.active .icon.close {
+    padding: 3.9rem 2.645rem 0 0;
+    display: flex;
+    justify-content: flex-end;
+}
+header .hamburguerMenu .links.active ul {
+    list-style-type: none;
+    padding: 6.5rem 0 0 3.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+}
+header .hamburguerMenu .links.active ul a {
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-family: "Barlow Condensed", serif;
+    font-weight: 400;
+    line-height: 1.92rem;
+    letter-spacing: 0.27rem;
+    text-transform: uppercase;
+    color: #fff;
+}
+header .hamburguerMenu .links.active ul a:hover {
+    opacity: 0.8;
+}
+header .hamburguerMenu .links.active ul a:active {
+    opacity: 0.4;
+}
+@media (min-width: 768px) {
+    header .homeLogo {
+        margin-left: 2.4rem;
+   }
+    header .hamburguerMenu .icon {
+        display: none;
+   }
+    header .hamburguerMenu .links {
+        display: flex;
+        width: 59vw;
+        height: 6rem;
+        background-color: rgba(255, 255, 255, 0.04);
+   }
+    header .hamburguerMenu .links .icon.close {
+        display: none;
+   }
+    header .hamburguerMenu .links ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+   }
+    header .hamburguerMenu .links ul li.active {
+        border-bottom: 0.3rem solid #fff;
+   }
+    header .hamburguerMenu .links ul li:hover {
+        border-bottom: 0.3rem solid #fff 7e;
+   }
+    header .hamburguerMenu .links ul a {
+        text-decoration: none;
+        font-size: 0.88rem;
+        font-family: "Barlow Condensed", serif;
+        font-weight: 400;
+        line-height: 5.7rem;
+        letter-spacing: 0.236rem;
+        text-transform: uppercase;
+        color: #fff;
+   }
+    header .hamburguerMenu .links ul a span {
+        display: none;
+   }
+}
+@media (min-width: 1024px) {
+    header {
+        margin-top: 2.25rem;
+   }
+    header .homeLogo {
+        margin-left: 3.05rem;
+        position: relative;
+   }
+    header .line {
+        border-top: 1px solid #383b4b;
+        width: 25.3rem;
+        margin-top: 3.2rem;
+        position: absolute;
+        left: 9rem;
+        top: 2rem;
+   }
+    header .hamburguerMenu .links ul {
+        background: #fff 5;
+        justify-content: center;
+        gap: 2.67rem;
+   }
+    header .hamburguerMenu .links ul a span {
+        display: inherit;
+        font-weight: 700;
+   }
+}
