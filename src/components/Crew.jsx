@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import React,{ useEffect, useState } from "react";
 import "./Crew.css";
 import data from "../data.json";
 function Crew({ setActualPage }) {

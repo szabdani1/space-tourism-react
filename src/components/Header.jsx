@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import React,{ useState } from "react";
 import "./Header.css";
 import logo from "../assets/shared/logo.svg"
 import close from "../assets/shared/icon-close.svg"
